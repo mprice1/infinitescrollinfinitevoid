@@ -1,0 +1,2 @@
+Redirect / /void.html
+Redirect /index.html /void.html

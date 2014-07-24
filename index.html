@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>infinite scroll infinite void </title>
+  <link rel="shortcut icon" href="favicon.gif" type="image/x-icon" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+  <script type="text/javascript" src="void.js"></script>
+  <script type="text/javascript" src="npr_build.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39300694-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  <style type='text/css'>
+  .temp {
+    width: 640px;
+    height: 480px;
+    /*background-image:url('stars.gif');*/
+    border:solid 10px #000;
+    margin-bottom:25px;
+    position:relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px #222222;
+    left: -330px;
+  }
+
+  body {
+    background-color: black;
+    background-image:url('stars.gif');
+    margin:0;
+    padding:0;
+  }
+
+  .pstars {
+    position:fixed;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    background-image:url('startrans.png');
+  }
+
+  #container {
+    width: 0px;
+    position:absolute;
+    left: 50%;
+    padding-bottom: 250px;
+  }
+  </style>
+</head>
+<body onload="init();">
+  <div class="pstars"></div>
+    <div id="container">
+    </div>
+</body>
+</html>
